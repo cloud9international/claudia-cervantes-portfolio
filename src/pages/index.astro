@@ -1,17 +1,195 @@
 ---
-
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claudia Cervantes | Portfolio</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: #f5f5f5;
+      }
+
+	  main {
+  		padding: 48px 24px 80px;
+	  }
+	  
+	  .hero {
+  	    padding: 40px 0 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .eyebrow {
+        color: #b3b3b3;
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        line-height: 1.05;
+        margin: 0 0 16px;
+      }
+
+      .subtitle {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        color: #d4d4d4;
+        max-width: 700px;
+        margin: 0 0 32px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .links a {
+        color: #f5f5f5;
+        text-decoration: none;
+        border: 1px solid #2a2a2a;
+        padding: 10px 16px;
+        border-radius: 999px;
+        transition: 0.2s ease;
+      }
+
+      .links a:hover {
+        border-color: #f5f5f5;
+      }
+
+	  .lang {
+	    font-size: 0.8em;
+		opacity: 0.65;
+	  }	
+
+	  .links a {
+	    font-size: 0.95rem;
+	  }
+
+	  .projects {
+	    padding: 80px 0;
+	  }
+
+	  .projects h2 {
+	    font-size: 2rem;
+	    margin-bottom: 32px;
+	  }
+
+	  .project-grid {
+	    display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	    gap: 28px;
+	  }
+
+	  .project-card {
+	    text-decoration: none;
+	    color: inherit;
+	    border: 1px solid #2a2a2a;
+	    border-radius: 14px;
+	    overflow: hidden;
+	    transition: transform 0.2s ease, border 0.2s ease;
+	  }
+
+	  .project-card:hover {
+	    transform: translateY(-4px);
+	    border-color: #444;
+	  }
+
+	  .project-card img {
+	    width: 100%;
+	    height: 220px;
+		object-fit: contain;
+	    display: #111;
+	  }
+
+	  .project-card h3 {
+	    font-size: 1.1rem;
+	    padding: 16px 16px 4px;
+	  }
+
+	  .project-card p {
+	    font-size: 0.9rem;
+	    color: #bfbfbf;
+	    padding: 0 16px 18px;
+	  }
+	
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+    	<div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Claudia Cervantes</h1>
+        <p class="subtitle">
+          Data Analyst with a background in CRM, operations, and cross-functional
+          project coordination. I build clear, actionable insights through
+          dashboards, reporting, and data storytelling.
+        </p>
+
+        <div class="links">
+          <a href="https://www.linkedin.com/in/claudia-cervantes-worldwide/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/cloud9international"" target="_blank" rel="noopener">GitHub</a>
+          <a href="/claudia-cervantes-cv-en.pdf" target="_blank">CV <span class="lang">(English)</span></a>
+  		  <a href="/claudia-cervantes-cv-es.pdf" target="_blank">CV <span class="lang">(Español)</span></a>
+          <a href="mailto:claudia.cervantes.worldwide@gmail.com?subject=Portfolio Contact">Contact</a>
+        </div>
+		
+      	</div>
+	    </section>
+	  <section class="projects">
+		<div class="container">
+		<h2>Featured Projects</h2>
+
+		<div class="project-grid">
+
+		<a class="project-card" href="https://github.com/cloud9international/musicstream-data-insights-pipeline" target="_blank">
+			<img src="/projects/musicstream-pipeline.jpg" alt="MusicStream pipeline analysis">
+			<h3>MusicStream Analytics Pipeline</h3>
+			<p>End-to-end pipeline integrating Spotify and Last.fm APIs to extract and structure music data. Processed with Python and stored in MySQL for analysis.</p>
+		</a>
+
+		<a class="project-card" href="https://github.com/cloud9international/world-happiness-data-insights-dashboard" target="_blank">
+			<img src="/projects/world-happiness-dashboard.jpg" alt="World Happiness dashboard">
+			<h3>World Happiness Report Dashboard</h3>
+			<p>Multi-source happiness dataset integrated and analyzed using Python ETL workflows and visualized in Power BI.</p>
+		</a>
+
+		<a class="project-card" href="https://github.com/cloud9international/employee-data-audit-retention-insights" target="_blank">
+			<img src="/projects/employee-retention-analysis.jpg" alt="Employee retention analysis">
+			<h3>Employee Retention Analytics</h3>
+			<p>Employee dataset audit uncovering attrition patterns through data cleaning, transformation, and visualization.</p>
+		</a>
+
+		<a class="project-card" href="https://github.com/cloud9international/friends-data-insights-tableau-dashboard" target="_blank">
+			<img src="/projects/friends-tableau-dashboard.jpg" alt="Friends Tableau dashboard">
+			<h3>Friends Analytics Dashboard</h3>
+			<p>Interactive Tableau dashboard analyzing episode ratings and viewership trends across the full series.</p>
+		</a>
+
+		</div>
+	</div>
+	</section>
+
+    </main>
+  </body>
 </html>
