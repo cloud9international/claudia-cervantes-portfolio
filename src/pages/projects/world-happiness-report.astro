@@ -1,0 +1,204 @@
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Happiness Report Dashboard | Claudia Cervantes</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: #f5f5f5;
+      }
+
+      main {
+        padding: 48px 24px 80px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 32px;
+        color: #bfbfbf;
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+
+      .back-link:hover {
+        color: #ffffff;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.1;
+        margin: 0 0 16px;
+      }
+
+      .summary {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #d4d4d4;
+        max-width: 800px;
+        margin: 0 0 24px;
+      }
+
+      .tools {
+        font-size: 0.85rem;
+        color: #8c8c8c;
+        margin: 0 0 36px;
+        letter-spacing: 0.02em;
+      }
+
+      .hero-image {
+        width: 100%;
+        border: 1px solid #2a2a2a;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        background: #111;
+      }
+
+      .hero-image img {
+        display: block;
+        width: 100%;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section h2 {
+        font-size: 1.4rem;
+        margin: 0 0 14px;
+      }
+
+      .section p,
+      .section li {
+        font-size: 1rem;
+        line-height: 1.75;
+        color: #d0d0d0;
+      }
+
+      .section ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .links a {
+        color: #f5f5f5;
+        text-decoration: none;
+        border: 1px solid #2a2a2a;
+        padding: 10px 16px;
+        border-radius: 999px;
+        transition: 0.2s ease;
+      }
+
+      .links a:hover {
+        border-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a class="back-link" href="/">← Back to portfolio</a>
+
+        <h1>World Happiness Report Dashboard</h1>
+
+        <p class="summary">
+          Analysis of the World Happiness Report dataset combining Python ETL workflows with 
+          interactive Power BI dashboards to explore global well-being indicators.
+        </p>
+
+        <p class="tools">Python · ETL · Power BI</p>
+
+        <div class="hero-image">
+          <img
+            src="/projects/world-happiness-dashboard.jpg"
+            alt="World Happiness Report Dashboard"
+          />
+        </div>
+
+        <section class="section">
+          <h2>Project Overview</h2>
+          <p>
+            This project explored the World Happiness Report dataset to better understand the social, economic, 
+            and behavioral factors associated with well-being across countries. The work combined exploratory data analysis, 
+            dataset transformation, and interactive visualization to examine how variables such as life satisfaction, 
+            social support, and generosity relate to reported happiness levels.
+
+            A key focus of the project was understanding the methodology behind the data itself. 
+            This included reviewing official World Happiness Report and Gallup documentation to interpret 
+            how variables were collected and defined, and how differences in survey methods or sample sizes might affect cross-country comparisons.
+
+            The final output was an interactive Power BI dashboard that allows users to explore global trends, 
+            compare continents, and drill down into individual country metrics.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>What I Worked On</h2>
+          <ul>
+            <li>Reviewed World Happiness Report and Gallup documentation to understand how key variables 
+                such as Life Ladder, Generosity, and Social Support were collected and defined.</li>
+            <li>Conducted exploratory data analysis to assess distributions, missing values, and potential reporting biases across countries.</li>
+            <li>Developed reusable Python functions to automate data inspection tasks during EDA and ETL workflows.</li>
+            <li>Collaborated on data cleaning and transformation pipelines using Python and Jupyter notebooks.</li>
+            <li>Built the global map visualization and designed the country-level dashboard view in Power BI.</li>
+            <li>Structured the dashboard narrative to move from global overview → continental comparison → country-level analysis.</li>
+            <li>Served as Scrum Master, coordinating sprint progress and project milestones.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Key Highlights</h2>
+          <ul>
+            <li>Interactive Power BI dashboard combining global, regional, and country-level views of happiness indicators.</li>
+            <li>Integration of additional datasets to provide methodological context for the World Happiness data.</li>
+            <li>Analysis of missing values and reporting differences across countries while preserving original data integrity (no imputation).</li>
+            <li>Dashboard designed to guide users from macro global trends to micro country-level insights.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Links</h2>
+          <div class="links">
+            <a
+              href="https://github.com/cloud9international/world-happiness-data-insights-dashboard"
+              target="_blank"
+              rel="noopener"
+            >
+              View GitHub Repo
+            </a>
+            <a href="/whr-dashboard-analysis.pdf" target="_blank">
+              View Dashboard Analysis
+            </a>
+            <a href="/">← Back to Portfolio</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

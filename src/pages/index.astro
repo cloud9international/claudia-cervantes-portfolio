@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claudia Cervantes | Portfolio</title>
     <style>
+		/* -------------------- */
+		/* Global */
+		/* -------------------- */
       :root {
         color-scheme: dark;
       }
@@ -20,11 +23,17 @@
         background: #0b0b0b;
         color: #f5f5f5;
       }
+		/* -------------------- */
+		/* Layout */
+		/* -------------------- */
 
 	  main {
   		padding: 48px 24px 80px;
 	  }
 	  
+		/* -------------------- */
+		/* Hero Section */
+		/* -------------------- */  
 	  .hero {
   	    padding: 40px 0 20px;
       }
@@ -56,7 +65,9 @@
         max-width: 700px;
         margin: 0 0 32px;
       }
-
+		/* -------------------- */
+		/* Navigation Links */
+		/* -------------------- */
       .links {
         display: flex;
         flex-wrap: wrap;
@@ -85,6 +96,9 @@
 	    font-size: 0.95rem;
 	  }
 
+		/* -------------------- */
+		/* Projects Section */
+		/* -------------------- */
 	  .projects {
 	    padding: 80px 0;
 	  }
@@ -99,6 +113,10 @@
 	    grid-template-columns: repeat(2, 1fr);
 	    gap: 28px;
 	  }
+
+/* -------------------- */
+/* Project Cards */
+/* -------------------- */
 
 	  .project-card {
 	    text-decoration: none;
@@ -118,20 +136,30 @@
 	    width: 100%;
 	    height: 220px;
 		object-fit: contain;
-	    display: #111;
+	    display: block;
+  		background: #111;
+		padding: 12px 16px 0;
 	  }
 
 	  .project-card h3 {
 	    font-size: 1.1rem;
-	    padding: 16px 16px 4px;
+	    padding: 16px 16px 2px;
 	  }
 
 	  .project-card p {
 	    font-size: 0.9rem;
 	    color: #bfbfbf;
-	    padding: 0 16px 18px;
+	    padding: 0 16px 8px;
 	  }
-	
+
+	  .tools {
+  		font-size: 0.78rem;
+  		color: #767676;
+  		padding: 0 16px 18px;
+  		margin-top: -2px;
+  		letter-spacing: 0.01em;
+	  }
+
     </style>
   </head>
   <body>
@@ -162,28 +190,34 @@
 
 		<div class="project-grid">
 
-		<a class="project-card" href="https://github.com/cloud9international/musicstream-data-insights-pipeline" target="_blank">
+		<a class="project-card" href="/projects/musicstream-analytics-pipeline">
 			<img src="/projects/musicstream-pipeline.jpg" alt="MusicStream pipeline analysis">
 			<h3>MusicStream Analytics Pipeline</h3>
-			<p>End-to-end pipeline integrating Spotify and Last.fm APIs to extract and structure music data. Processed with Python and stored in MySQL for analysis.</p>
+			<p>End-to-end music analytics pipeline integrating Spotify and Last.fm APIs, Python-based 
+			   data processing, and a MySQL database to analyze artist popularity and genre trends.</p>
+			<p class="tools">Python · APIs · ETL · MySQL</p>
 		</a>
 
-		<a class="project-card" href="https://github.com/cloud9international/world-happiness-data-insights-dashboard" target="_blank">
+		<a class="project-card" href="/projects/world-happiness-report">
 			<img src="/projects/world-happiness-dashboard.jpg" alt="World Happiness dashboard">
 			<h3>World Happiness Report Dashboard</h3>
-			<p>Multi-source happiness dataset integrated and analyzed using Python ETL workflows and visualized in Power BI.</p>
+			<p>Analysis of the World Happiness Report dataset combining Python ETL workflows with interactive 
+				Power BI dashboards to explore global well-being indicators.</p>
+			<p class="tools">Python · ETL · Power BI</p>
 		</a>
 
-		<a class="project-card" href="https://github.com/cloud9international/employee-data-audit-retention-insights" target="_blank">
+		<a class="project-card" href="/projects/employee-retention-analysis">
 			<img src="/projects/employee-retention-analysis.jpg" alt="Employee retention analysis">
-			<h3>Employee Retention Analytics</h3>
+			<h3>Employee Retention Analysis</h3>
 			<p>Employee dataset audit uncovering attrition patterns through data cleaning, transformation, and visualization.</p>
+			<p class="tools">Python · Data Cleaning · EDA · Visualization</p>
 		</a>
 
-		<a class="project-card" href="https://github.com/cloud9international/friends-data-insights-tableau-dashboard" target="_blank">
+		<a class="project-card" href="/projects/friends-analytics-dashboard">
 			<img src="/projects/friends-tableau-dashboard.jpg" alt="Friends Tableau dashboard">
 			<h3>Friends Analytics Dashboard</h3>
 			<p>Interactive Tableau dashboard analyzing episode ratings and viewership trends across the full series.</p>
+			<p class="tools">Tableau · Data Visualization · Storytelling · Data Cleaning</p>
 		</a>
 
 		</div>

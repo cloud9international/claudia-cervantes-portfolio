@@ -1,0 +1,210 @@
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends Analytics Dashboard | Claudia Cervantes</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: #f5f5f5;
+      }
+
+      main {
+        padding: 48px 24px 80px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 32px;
+        color: #bfbfbf;
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+
+      .back-link:hover {
+        color: #ffffff;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.1;
+        margin: 0 0 16px;
+      }
+
+      .summary {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #d4d4d4;
+        max-width: 800px;
+        margin: 0 0 24px;
+      }
+
+      .tools {
+        font-size: 0.85rem;
+        color: #8c8c8c;
+        margin: 0 0 36px;
+        letter-spacing: 0.02em;
+      }
+
+      .hero-image {
+        width: 100%;
+        border: 1px solid #2a2a2a;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        background: #111;
+      }
+
+      .hero-image img {
+        display: block;
+        width: 100%;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section h2 {
+        font-size: 1.4rem;
+        margin: 0 0 14px;
+      }
+
+      .section p,
+      .section li {
+        font-size: 1rem;
+        line-height: 1.75;
+        color: #d0d0d0;
+      }
+
+      .section ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .links a {
+        color: #f5f5f5;
+        text-decoration: none;
+        border: 1px solid #2a2a2a;
+        padding: 10px 16px;
+        border-radius: 999px;
+        transition: 0.2s ease;
+      }
+
+      .links a:hover {
+        border-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a class="back-link" href="/">← Back to portfolio</a>
+
+        <h1>Friends Analytics Dashboard</h1>
+
+        <p class="summary">
+          Interactive Tableau dashboard analyzing ratings, viewership, and episode-level metrics across all seasons of the TV series Friends.
+        </p>
+
+        <p class="tools">Tableau · Data Visualization · Storytelling · Data Cleaning</p>
+
+        <div class="hero-image">
+          <img
+            src="/projects/friends-tableau-dashboard.jpg"
+            alt="Friends Analytics Dashboard"
+          />
+        </div>
+
+        <section class="section">
+          <h2>Project Overview</h2>
+          <p>
+            This project analyzes multiple datasets related to the TV series <strong>Friends</strong> to explore patterns in episode performance, 
+            audience engagement, and character dialogue across the series.
+            Several datasets were combined, including episode metadata, character quotes, 
+            and relationship information. Initial exploration and light preprocessing 
+            were performed in Python, while the majority of data cleaning, modeling, and visualization were completed directly in Tableau.
+            The final interactive dashboard examines episode ratings, broadcast viewership, and character dialogue trends 
+            across all ten seasons. Special focus was placed on comparing the highest-rated episodes with the 
+            most-viewed broadcasts, revealing differences between audience reception and live broadcast popularity.
+            Additional analysis of iconic quotes explores dialogue distribution across characters and highlights 
+            how memorable phrases are associated with specific characters throughout the series.
+          </p>
+          
+        </section>
+
+        <section class="section">
+          <h2>What I Worked On</h2>
+          <ul>
+            <li>Performed exploratory data analysis and initial data cleaning across multiple Friends datasets including episode metadata, quotes, and character information.</li>
+            <li>Prepared and transformed datasets for analysis, addressing inconsistencies such as naming variations and incomplete values.</li>
+            <li>Built the primary Tableau dashboard layout and visual design, incorporating the recognizable Friends typography and visual style.</li>
+            <li>Designed and implemented visualizations analyzing episode ratings, viewership trends, and season-level performance.</li>
+            <li>Created analyses of the top 10 highest-rated episodes and the top 10 most-viewed episodes, highlighting overlaps and differences between audience ratings and broadcast popularity.</li>
+            <li>Developed quote analysis visuals showing character dialogue distribution and frequency of well-known phrases across the series.</li>
+            <li>Curated and cleaned tooltip content to present relevant contextual information without overwhelming the viewer.</li>
+            <li>Configured dashboard interactions, filters, and axis formatting to improve clarity and usability of the visualizations.</li>
+            <li>Collaborated on defining key metrics and KPIs used throughout the dashboard.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Key Highlights</h2>
+          <ul>
+            <li>Interactive Tableau dashboard analyzing episode ratings, audience viewership, and dialogue patterns across all ten seasons of Friends.</li>
+            <li>Comparison of highest-rated episodes versus highest-viewed episodes, revealing differences between critical reception and broadcast popularity.</li>
+            <li>Dialogue analysis of iconic quotes across characters to explore dialogue distribution and cultural impact.</li>
+            <li>Dashboard design inspired by the visual identity of the Friends series while maintaining analytical clarity.</li>
+            <li>Integration of multiple datasets including episodes, quotes, and character information to create enriched analytical views.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Links</h2>
+          <div class="links">
+            <a
+              href="https://public.tableau.com/shared/JTPPYHGRZ?:display_count=n&:origin=viz_share_link"
+              target="_blank"
+              rel="noopener"
+            >
+              View Live Dashboard
+            </a>
+
+            <a
+              href="https://github.com/cloud9international/friends-data-insights-tableau-dashboard"
+              target="_blank"
+              rel="noopener"
+            >
+              View GitHub Repo
+            </a>
+            <a href="/">← Back to Portfolio</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
