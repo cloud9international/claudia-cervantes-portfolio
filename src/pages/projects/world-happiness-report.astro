@@ -83,14 +83,14 @@
       }
 
       .section h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin: 0 0 14px;
       }
 
       .section p,
       .section li {
         font-size: 1rem;
-        line-height: 1.75;
+        line-height: 1.6;
         color: #d0d0d0;
       }
 
@@ -134,6 +134,15 @@
 
         <p class="tools">Python · ETL · Power BI</p>
 
+        <section class="section">
+          <h2>Key Insights</h2>
+            <ul>
+              <li>Economic prosperity alone does not explain happiness — social support and perceived freedom show equally strong correlations.</li>
+              <li>Nordic countries consistently rank highest in reported well-being, reflecting strong social trust and institutional stability.</li>
+              <li>Survey methodology and sample sizes vary across countries and years polled, introducing potential bias in global comparisons.</li>
+            </ul>
+        </section>
+        
         <div class="hero-image">
           <img
             src="/projects/world-happiness-dashboard.jpg"
@@ -144,41 +153,32 @@
         <section class="section">
           <h2>Project Overview</h2>
           <p>
-            This project explored the World Happiness Report dataset to better understand the social, economic, 
-            and behavioral factors associated with well-being across countries. The work combined exploratory data analysis, 
-            dataset transformation, and interactive visualization to examine how variables such as life satisfaction, 
-            social support, and generosity relate to reported happiness levels.
-
-            A key focus of the project was understanding the methodology behind the data itself. 
-            This included reviewing official World Happiness Report and Gallup documentation to interpret 
-            how variables were collected and defined, and how differences in survey methods or sample sizes might affect cross-country comparisons.
-
-            The final output was an interactive Power BI dashboard that allows users to explore global trends, 
-            compare continents, and drill down into individual country metrics.
+            This project analyzes the World Happiness Report dataset to explore the social, economic, and behavioral
+            factors associated with well-being across countries. The workflow combined exploratory data analysis,
+            dataset transformation, and interactive visualization to examine relationships between variables such as
+            life satisfaction, social support, and generosity.
+          </p>
+          <p>
+            A key component of the analysis involved reviewing World Happiness Report and Gallup documentation to
+            understand how survey variables were collected and defined, as well as how methodological differences
+            across countries could influence results.
+          </p>
+          <p>
+            The final outcome was an interactive Power BI dashboard allowing users to explore global trends,
+            compare continents, and drill down into individual country-level indicators.
           </p>
         </section>
 
         <section class="section">
           <h2>What I Worked On</h2>
           <ul>
-            <li>Reviewed World Happiness Report and Gallup documentation to understand how key variables 
-                such as Life Ladder, Generosity, and Social Support were collected and defined.</li>
-            <li>Conducted exploratory data analysis to assess distributions, missing values, and potential reporting biases across countries.</li>
-            <li>Developed reusable Python functions to automate data inspection tasks during EDA and ETL workflows.</li>
+            <li>Analyzed World Happiness Report and Gallup documentation to interpret how variables such as Life Ladder, Generosity, and Social Support are collected and defined.</li>
+            <li>Performed exploratory data analysis to evaluate distributions, missing values, and potential reporting biases across countries.</li>
+            <li>Developed reusable Python functions to automate dataset inspection tasks during EDA and ETL workflows.</li>
             <li>Collaborated on data cleaning and transformation pipelines using Python and Jupyter notebooks.</li>
-            <li>Built the global map visualization and designed the country-level dashboard view in Power BI.</li>
-            <li>Structured the dashboard narrative to move from global overview → continental comparison → country-level analysis.</li>
+            <li>Designed the global map visualization and built the country-level dashboard view in Power BI.</li>
+            <li>Structured the dashboard narrative to guide users from global trends → continental comparisons → country-level insights.</li>
             <li>Served as Scrum Master, coordinating sprint progress and project milestones.</li>
-          </ul>
-        </section>
-
-        <section class="section">
-          <h2>Key Highlights</h2>
-          <ul>
-            <li>Interactive Power BI dashboard combining global, regional, and country-level views of happiness indicators.</li>
-            <li>Integration of additional datasets to provide methodological context for the World Happiness data.</li>
-            <li>Analysis of missing values and reporting differences across countries while preserving original data integrity (no imputation).</li>
-            <li>Dashboard designed to guide users from macro global trends to micro country-level insights.</li>
           </ul>
         </section>
 
@@ -190,10 +190,10 @@
               target="_blank"
               rel="noopener"
             >
-              View GitHub Repo
+              GitHub Repo
             </a>
             <a href="/whr-dashboard-analysis.pdf" target="_blank">
-              View Dashboard Analysis
+              Project Analysis
             </a>
             <a href="/">← Back to Portfolio</a>
           </div>
