@@ -1,0 +1,205 @@
+---
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS Cloud Data Pipeline | Claudia Cervantes</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: #f5f5f5;
+      }
+
+      main {
+        padding: 48px 24px 80px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 32px;
+        color: #bfbfbf;
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+
+      .back-link:hover {
+        color: #ffffff;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.1;
+        margin: 0 0 16px;
+      }
+
+      .summary {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #d4d4d4;
+        max-width: 800px;
+        margin: 0 0 24px;
+      }
+
+      .tools {
+        font-size: 0.85rem;
+        color: #8c8c8c;
+        margin: 0 0 36px;
+        letter-spacing: 0.02em;
+      }
+
+      .hero-image {
+        width: 100%;
+        border: 1px solid #2a2a2a;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        background: #111;
+      }
+
+      .hero-image img {
+        display: block;
+        width: 100%;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+        margin: 0 0 14px;
+      }
+
+      .section + .section {
+        margin-top: 44px;
+      }
+
+      .section p,
+      .section li {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #d0d0d0;
+      }
+
+      .section ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .links a {
+        color: #f5f5f5;
+        text-decoration: none;
+        border: 1px solid #2a2a2a;
+        padding: 10px 16px;
+        border-radius: 999px;
+        transition: 0.2s ease;
+      }
+
+      .links a:hover {
+        border-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a class="back-link" href="/">← Back to portfolio</a>
+
+        <h1>AWS Cloud Data Pipeline</h1>
+
+        <p class="summary">
+          Designed and implemented a serverless analytics pipeline using Amazon Web Services to automate data ingestion, transformation, cataloging, and SQL-based analysis.
+        </p>
+
+        <p class="tools">AWS · S3 · Lambda · Glue · Athena · ETL</p>
+
+        <section class="section">
+          <h2>Key Insights</h2>
+          <ul>
+            <li>Serverless architecture reduced operational complexity while maintaining scalability across the analytics workflow.</li>
+            <li>Converting raw CSV files to Parquet improved query performance and reduced storage and analytics costs.</li>
+            <li>Event-driven automation using S3 triggers and Lambda eliminated manual pipeline execution and improved reliability.</li>
+          </ul>
+        </section>
+        
+        <div class="hero-image">
+          <img
+            src="/projects/aws-cloud-data-pipeline.jpg"
+            alt="AWS Cloud Data Pipeline architecture diagram"
+          />
+        </div>
+
+        <section class="section">
+  <h2>Project Overview</h2>
+
+          <p>
+            This project involved designing and deploying an end-to-end analytics pipeline using Amazon Web Services (AWS).
+            The objective was to move beyond traditional data analysis workflows and implement a cloud-native architecture
+            capable of automated ingestion, transformation, storage, cataloging, and SQL-based analytics.
+          </p>
+
+          <p>
+            Using AWS services including S3, Lambda, Glue, Athena, and the Glue Data Catalog, the team built a
+            serverless workflow that automatically processes raw datasets, transforms them into optimized Parquet files,
+            and makes them available for analysis through SQL queries.
+          </p>
+
+          <p>
+            The project emphasized architectural design, IAM-based security, cloud best practices,
+            automation, and cost-efficient analytics using modern data engineering concepts.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>What I Worked On</h2>
+          <ul>
+            <li>Helped define the overall pipeline architecture and analytics workflow, evaluating AWS services and shaping the serverless design approach adopted by the team.</li>
+            <li>Coordinated project planning and team collaboration in a Scrum-style workflow.</li>
+            <li>Participated in designing the data lake structure using separate RAW and CLEAN zones within Amazon S3.</li>
+            <li>Contributed to ETL workflow design using AWS Glue and Parquet-based optimization strategies.</li>
+            <li>Configured and tested integrations across S3, Lambda, Glue, Athena, Crawlers, and the Glue Data Catalog.</li>
+            <li>Evaluated architectural alternatives including Amazon RDS and EC2 before selecting a fully serverless solution.</li>
+            <li>Presented the project objectives, architecture overview, and final conclusions during the team presentation.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Links</h2>
+          <div class="links">
+            <a href="/aws-cloud-data-pipeline-presentation.pdf" target="_blank">
+              Project Presentation
+            </a>
+
+            <a href="/">
+              ← Back to Portfolio
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
